@@ -122,7 +122,7 @@ function App() {
         </select>
       </form>
       {selectedData.countrie && selectedData.state && selectedData.city && (
-        <p>You selected {selectedData.city}, {selectedData.state}, {selectedData.countrie}</p>
+        <p>{`You selected ${selectedData.city}, ${selectedData.state}, ${selectedData.countrie}`}</p>
       )}
     </div>
   );
