@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-ser !important;
+}
+.App {
+  /* border: 2px solid red; */
+  width: auto;
+  height: auto;
+  padding: 50px 50px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.App h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+hr {
+  width: 300px;
+  border: 2px solid rgb(0, 68, 255);
+  display: flex;
+  margin: auto;
+}
+.App select:first-child {
+  width: 350px;
+  height: 40px;
+  padding: 0px 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 15px;
+  cursor: pointer;
+}
+.App select {
+  width: 250px;
+  height: 40px;
+  padding: 0px 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 15px;
+  cursor: pointer;
+}
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.selected .countires {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+}
+.selected h3 span {
+  color: #999797;
+  font-size: 1rem;
+}
