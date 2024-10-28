@@ -123,10 +123,10 @@ function App() {
       {selectedData.countrie && selectedData.state && selectedData.city ? (
         <div className="selected">
           <h3>
-          You Selected 
-            <span className="countires">{selectedData.countrie}</span>,
+            You Selected
+            <span className="countires"> {selectedData.countrie}</span>,
             <span>
-              {selectedData.state}, {selectedData.city}
+              {" "}{selectedData.state}, {selectedData.city}
             </span>
           </h3>
         </div>
