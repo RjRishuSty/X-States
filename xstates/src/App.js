@@ -67,7 +67,7 @@ function App() {
     }
   }, [selectedData.countrie, selectedData.state]);
 
-  console.log("selected", selectedData);
+  // console.log("selected", selectedData);
 
   return (
     <div className="App">
@@ -123,7 +123,7 @@ function App() {
       {selectedData.countrie && selectedData.state && selectedData.city ? (
         <div className="selected">
           <h3>
-            You selected{" "}
+          You Selected 
             <span className="countires">{selectedData.countrie}</span>,
             <span>
               {selectedData.state}, {selectedData.city}
