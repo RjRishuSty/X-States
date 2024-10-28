@@ -41,6 +41,7 @@ function App() {
         `https://crio-location-selector.onrender.com/country=${selectedData.countrie}/states`
       );
       setState(response.data);
+      console.log(response.data)
     } catch (error) {
       console.log(error);
     }
@@ -67,7 +68,7 @@ function App() {
     }
   }, [selectedData.countrie, selectedData.state]);
 
-  // console.log("selected", selectedData);
+  console.log("selected", state);
 
   return (
     <div className="App">
@@ -120,14 +121,8 @@ function App() {
           ))}
         </select>
       </form>
-      {selectedData.countrie && selectedData.state && selectedData.city ? (
-        <div className="selected">
-          <h3>You Selected <span className="countires"> {selectedData.city}</span>,<span> {selectedData.state}, {selectedData.countrie}
-            </span>
-          </h3>
-        </div>
-      ) : (
-        ""
+      {selectedData.countrie && selectedData.state && selectedData.city && (
+        <p>You selected {selectedData.city}, {selectedData.state}, {selectedData.countrie}</p>
       )}
     </div>
   );
