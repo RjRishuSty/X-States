@@ -120,13 +120,11 @@ function App() {
           ))}
         </select>
       </form>
-      {selectedData.countrie && selectedData.state && selectedData.city ? (
-        <h3>
-          You Selected {selectedData.countrie}, {selectedData.state},{" "}
-          {selectedData.city}
-        </h3>
-      ) : (
-        ""
+      {selectedData.countrie && selectedData.state && selectedData.city && (
+        <p>
+          You Selected {selectedData.city}, {selectedData.state},{" "}
+          {selectedData.country}
+        </p>
       )}
     </div>
   );
